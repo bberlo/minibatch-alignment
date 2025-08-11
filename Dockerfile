@@ -18,4 +18,5 @@ RUN pip3 install -r Code/requirements.txt
 # Make run script executable 
 CMD chmod +x Code/run.sh 
 # In case you are not using a script to execute your project (run.sh is not present), 
+
 you must comment the previous file.
