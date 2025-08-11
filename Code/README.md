@@ -4,7 +4,7 @@ Author: Bram van Berlo - b.r.d.v.berlo@tue.nl
 ### Requirements
 In the requirements.txt file the needed python modules for this project are specified.
 
-## Preprocessing steps
+### Preprocessing steps
 The pre-processed datasets in '../Data' are created using the pre-processing scripts in 'pre-processing/'.
 Links to the original datasets have been added to this subdirectory as well.
 The pre-processing scripts are not part of the audit procedure and can therefore not be run automatically.
@@ -19,7 +19,7 @@ Depending on script arguments with which csi_processing.py in pre-processing/ is
 
 ### -d widar -dt dfs
 
-This combination is not supported. Please consider the pre-processing procedure inside the Bram-Berlo van/ -> 2022/ -> PerFail2022/ -> Code/ -> pre-processing/ directory. More specifically, follow the pre-processing steps in the Code/README.txt together with subsection 'Widar_DFS_create_npy_files_domain_leave_out.py'.
+This combination is not supported. Please consider the pre-processing procedure inside the  Bram-Berlo van/ -> 2022/ -> PerFail2022/ -> Code/ -> pre-processing/ directory. For access to this directory, please contact TU/e IRIS (https://iris.win.tue.nl/). Follow the pre-processing steps in the Code/README.txt together with subsection 'Widar_DFS_create_npy_files_domain_leave_out.py'.
 
 ### -d widar -dt gaf
 
@@ -40,14 +40,14 @@ This combination is not supported. Please consider the pre-processing procedure 
 5) Execute csi_processing.py pre-processing script with aforementioned script arguments.
 6) Pre-processed datasets can be found inside the pre-processing/processed/ subdirectory.
 
-# Reproducing results
+### Reproducing results
 
 The run.sh file includes all bash commands which should be run to acquire the results used in Figures 3-6 of the journal paper.
 Prior to running the bash commands, make sure that all packages listed in the requirements.txt file are installed.
 Prior to running the bash commands, copy the datasets inside the '../Data' directory to the 'Datasets/' directory.
 The results in .csv format are placed in separate *evaluation*.csv (A, P, F, R, CK values measured once on left-out test subset) and *train_history*.csv (train/val subset losses, train/val subset A, P, F, R, CK values per epoch) files. The files are ordered in results/{args.dataset}_{args.datatype}/{args.model_name}/{args.backbone} subdirectories.
 
-## Plots
+### Plots
 
 Figure plots inside the journal paper were created by processing the .csv formatted results with MS Excel into chart structures.
 
